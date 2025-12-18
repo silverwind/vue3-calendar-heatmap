@@ -218,7 +218,7 @@
 						}
 						return `<b>${day.count} ${props.tooltipUnit}</b> ${lo.value.on} ${lo.value.months[ day.date.getMonth() ]} ${day.date.getDate()}, ${day.date.getFullYear()}`;
 					} else if (props.noDataText) {
-						return `${props.noDataText}`;
+						return `${props.noDataText} ${lo.value.on} ${lo.value.months[ day.date.getMonth() ]} ${day.date.getDate()}, ${day.date.getFullYear()}`;
 					} else if (props.noDataText !== false) {
 						return `<b>No ${props.tooltipUnit}</b> ${lo.value.on} ${lo.value.months[ day.date.getMonth() ]} ${day.date.getDate()}, ${day.date.getFullYear()}`;
 					}
